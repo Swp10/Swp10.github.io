@@ -112,9 +112,9 @@ author:
   location         : "San Francisco, CA"
   email            : "shirleyfsqa@gmail.com"
   links:
-    - label: "Email"
+    - label: "Linkedin"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:shirleyfsqa@gmail.com
+      url: "https://www.linkedin.com/in/shirleyfeng10/"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://Swp10.github.io"
