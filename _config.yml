@@ -107,10 +107,10 @@ analytics:
 # Site Author
 author:
   name             : "Shirley Feng"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "My Data Science Portfolio"
-  location         : "San Francisco Bay Area"
-  email            :
+  avatar           : "/images/Shirley.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Data Science Portfolio"
+  location         : "San Francisco, CA"
+  email            : "shirleyfsqa@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -293,7 +293,6 @@ defaults:
       comments: # true
       share: true
       related: true
-
   #_pages
   - scope:
       path: ""
