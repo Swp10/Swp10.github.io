@@ -1,8 +1,8 @@
 ---
-  layout: archive
+  layout: posts
   title: "Data Science Project"
   permalink: /project/
-  author_profile: True
+  author_profile: true
   header:
     image: "/images/redbanner.jpg"
 ---
