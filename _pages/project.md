@@ -1,6 +1,6 @@
 ---
   layout: archive
-  title: "Project"
+  title: "Data Science Project"
   permalink: /project/
   author_profile: True
   header:
