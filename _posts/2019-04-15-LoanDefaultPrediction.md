@@ -11,11 +11,11 @@ I will be exploring publicly available Lending Club data from Kaggle. Lending Cl
 
 The features represent as follow:
 
-**credit.policy**: 1 if the customer meets the credit underwriting criteria of LendingClub.com, and 0 otherwise. \r\n
-**purpose**: The purpose of the loan \r\n
-**int.rate**: The interest rate of the loan \r\n
-**installment**: The monthly installments owed by the borrower if the loan is funded. \r\n
-**log.annual.inc**: The natural log of the self-reported annual income of the borrower. \r\n
+**credit.policy**: 1 if the customer meets the credit underwriting criteria of LendingClub.com, and 0 otherwise. "\n"
+**purpose**: The purpose of the loan "\n"
+**int.rate**: The interest rate of the loan "\n"
+**installment**: The monthly installments owed by the borrower if the loan is funded. "\n"
+**log.annual.inc**: The natural log of the self-reported annual income of the borrower. "\n"
 **dti**: The debt-to-income ratio of the borrower (amount of debt divided by annual income). \r\n
 **fico**: The FICO credit score of the borrower. \r\n
 **days.with.cr.line**: The number of days the borrower has had a credit line. \n
