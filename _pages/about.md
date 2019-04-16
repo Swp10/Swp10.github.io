@@ -1,8 +1,9 @@
 ---
 title: "About"
 permalink: /about/
+author_profile: True
 header:
-  image: "/images/sky.jpg"
+  image: "/images/redbanner.jpg"
 ---
 
 I am an ambitious technical professional with a keen interest in Data Science.             
