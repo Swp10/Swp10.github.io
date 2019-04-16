@@ -1,10 +1,10 @@
 ---
 title: "Loan Default Prediction"
 date: 2019-04-15
-tags: [machine learning, data science, data modeling, numpy, pandas, matplotlib, scikit-learn]
+tages: [machine learning, data science, data modeling, numpy, pandas, matplotlib, scikit-learn]
 header:
   image: "/images/loan.jpg"
-excerpt: "machine learning, data science, data modeling, numpy, pandas, matplotlib, scikit-learn"
+excerpt: "Machine Learning, Data Science, Data Modeling, Numpy, Pandas, Matplotlib, Scikit-learn"
 ---
 
 # Loan Default Prediction
