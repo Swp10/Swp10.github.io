@@ -2,16 +2,19 @@
 title: "Loan Default Prediction"
 date: 2019-04-15
 tages: [machine learning, data science, data modeling, numpy, pandas, matplotlib, scikit-learn]
-header:
-   image: "/images/loan.jpg"
 excerpt: "Machine Learning, Data Science, Data Modeling, Numpy, Pandas, Matplotlib, Scikit-learn"
+gallery:
+  - url: /images/Loan.jpg
+    image_path: /images/Loan.jpg
+    alt: "title image"
+    title: "Loan"
 ---
 
+{% include gallery id="gallery" layout="half" caption="Loan" %}
 
 I will be exploring publicly available Lending Club data from Kaggle. Lending Club is a platform bringing borrowers and investors together, transforming the way people access credit. As an investor, you would want to invest in people who showed a profile of having a high probability of paying back. I will try to create a model to predict this.
 
 The features represent as follow:
-
 
 1. credit.policy: 1 if the customer meets the credit underwriting criteria of LendingClub.com, and 0 otherwise.
 2. purpose: The purpose of the loan
@@ -76,6 +79,9 @@ Check the size of the dataset
 ```python
 loan.shape
 ```
+
+
+
 
 {% include group-by-array collection=site.posts field="tags" %}
 
