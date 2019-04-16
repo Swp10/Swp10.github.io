@@ -1,7 +1,6 @@
 ---
 title: "About"
 permalink: /about/
-author_profile: True
 header:
   image: "/images/redbanner.jpg"
 ---
