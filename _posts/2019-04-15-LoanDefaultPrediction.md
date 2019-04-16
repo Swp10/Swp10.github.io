@@ -63,6 +63,7 @@ warnings.filterwarnings("ignore")
 loan = pd.read_csv("loandata.csv")
 ```
 
+## Data Exploration
 Check out the info(), describe() and head() methods on loan
 ```python
 loan.info()
@@ -74,14 +75,86 @@ Check if there is any missing data
 ```python
 loan.isnull().sum()
 ```
+credit.policy          0
+purpose                0
+int.rate              11
+installment           10
+log.annual.inc        15
+dti                    6
+fico                   8
+days.with.cr.line      9
+revol.bal             12
+revol.util            24
+inq.last.6mths         2
+delinq.2yrs          141
+pub.rec                7
+not.fully.paid         0
+dtype: int64
 
 Check the size of the dataset
 ```python
 loan.shape
 ```
+(9578, 14)
 
+Check the features of the dataset
+```python
+loan.columns
+```
+Index(['credit.policy', 'purpose', 'int.rate', 'installment', 'log.annual.inc',
+       'dti', 'fico', 'days.with.cr.line', 'revol.bal', 'revol.util',
+       'inq.last.6mths', 'delinq.2yrs', 'pub.rec', 'not.fully.paid'],
+      dtype='object')
 
+Group the not.fully.paid feature
+```python
+loan.groupby('not.fully.paid').size()
+```
+not.fully.paid
+0    8045
+1    1533
+dtype: int64
 
+Data correlation matrix The correlation matrix is an important tool to understand the correlation between the different characteristics. The values range from -1 to 1 and the closer a value is to 1 the bettere correlation there is between two characteristics. Let's calculate the correlation matrix for our dataset.
+```python
+corr = loan.corr()
+corr  
+```    
+
+Histogram is use to find the data distribution of the features, find out if there is any outliners, and observe duplicate data
+```python
+diab_data.groupby('diabetes').hist(figsize=(9, 9))  
+```
+
+## Data Clean Up
+```python
+# select the columns where missing values and locate the zeros as a mask
+mask = loan[['int.rate', 'installment', 'log.annual.inc', 'dti','fico', 'days.with.cr.line',
+             'revol.bal','revol.util','inq.last.6mths','delinq.2yrs','pub.rec']] == 0
+```
+```python
+# replace the zeros with np.nan
+loan[mask] = np.nan
+loan.head(5)
+```
+```python
+#Get the mean
+loan.mean()
+```
+```python
+#Get the median
+loan.median()
+```
+
+## Exploratory Data Analysis
+
+```python
+sns.boxplot(x=loan["not.fully.paid"], y=loan["int.rate"])
+```
+
+```python
+sns.boxplot(x=loan["not.fully.paid"], y=loan["fico"])
+```
 
 {% include group-by-array collection=site.posts field="tags" %}
 
