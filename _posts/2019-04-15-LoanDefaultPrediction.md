@@ -7,30 +7,27 @@ header:
 excerpt: "Machine Learning, Data Science, Data Modeling, Numpy, Pandas, Matplotlib, Scikit-learn"
 ---
 
-# Loan Default Prediction
+I will be exploring publicly available Lending Club data from Kaggle. Lending Club is a platform bringing borrowers and investors together, transforming the way people access credit. As an investor, you would want to invest in people who showed a profile of having a high probability of paying back. I will try to create a model to predict this.
 
-Loan default prediction project, I will be exploring publicly available Lending Club data from Kaggle. Lending Club is a platform bringing borrowers and investors together, transforming the way people access credit. As an investor, you would want to invest in people who showed a profile of having a high probability of paying back. I will try to create a model to predict this.
+The features represent as follow:
 
-Here are what the columns represent:
-
-**credit.policy**: 1 if the customer meets the credit underwriting criteria of LendingClub.com, and 0 otherwise.
-**purpose**: The purpose of the loan
-**int.rate**: The interest rate of the loan
-**installment**: The monthly installments owed by the borrower if the loan is funded.
-**log.annual.inc**: The natural log of the self-reported annual income of the borrower.
-**dti**: The debt-to-income ratio of the borrower (amount of debt divided by annual income).
-**fico**: The FICO credit score of the borrower.
-**days.with.cr.line**: The number of days the borrower has had a credit line.
-**revol.bal**: The borrower's revolving balance (amount unpaid at the end of the credit card billing cycle).
-**revol.util**: The borrower's revolving line utilization rate (the amount of the credit line used relative to total credit available).
-**inq.last.6mths**: The borrower's number of inquiries by creditors in the last 6 months.
-**delinq.2yrs**: The number of times the borrower had been 30+ days past due on a payment in the past 2 years.
-**pub.rec**: The borrower's number of derogatory public records (bankruptcy filings, tax liens, or judgments).
+**credit.policy**: 1 if the customer meets the credit underwriting criteria of LendingClub.com, and 0 otherwise. \n
+**purpose**: The purpose of the loan \n
+**int.rate**: The interest rate of the loan \n
+**installment**: The monthly installments owed by the borrower if the loan is funded. \n
+**log.annual.inc**: The natural log of the self-reported annual income of the borrower. \n
+**dti**: The debt-to-income ratio of the borrower (amount of debt divided by annual income). \n
+**fico**: The FICO credit score of the borrower. \n
+**days.with.cr.line**: The number of days the borrower has had a credit line. \n
+**revol.bal**: The borrower's revolving balance (amount unpaid at the end of the credit card billing cycle). \n
+**revol.util**: The borrower's revolving line utilization rate (the amount of the credit line used relative to total credit available). \n
+**inq.last.6mths**: The borrower's number of inquiries by creditors in the last 6 months. \n
+**delinq.2yrs**: The number of times the borrower had been 30+ days past due on a payment in the past 2 years. \n
+**pub.rec**: The borrower's number of derogatory public records (bankruptcy filings, tax liens, or judgments). \n
 
 ## Import Libraries
 Import the usual libraries for pandas, plotting, and sklearn.
 
-Python code block:
 ```python
 import numpy as np
 import pandas as pd
@@ -51,20 +48,17 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 
-
 import warnings
 warnings.filterwarnings("ignore")
 ```
 
 ## Get the Data
-Python code block:
 ```python
 # load dataset
 loan = pd.read_csv("loandata.csv")
 ```
 
 Check out the info(), describe() and head() methods on loan
-Python code block:
 ```python
 loan.info()
 loan.describe()
@@ -72,13 +66,11 @@ loan.head()
 ```
 
 Check if there is any missing data
-Python code block:
 ```python
 loan.isnull().sum()
 ```
 
 Check the size of the dataset
-Python code block:
 ```python
 loan.shape
 ```
