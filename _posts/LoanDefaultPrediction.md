@@ -9,7 +9,7 @@ excerpt: "machine learning, data science, data modeling, numpy, pandas, matplotl
 
 # Loan Default Prediction
 
-A loan default prediction project, I will be exploring publicly available Lending Club data from Kaggle. Lending Club is a platform bringing borrowers and investors together, transforming the way people access credit. As an investor, you would want to invest in people who showed a profile of having a high probability of paying back. I will try to create a model to predict this.
+Loan default prediction project, I will be exploring publicly available Lending Club data from Kaggle. Lending Club is a platform bringing borrowers and investors together, transforming the way people access credit. As an investor, you would want to invest in people who showed a profile of having a high probability of paying back. I will try to create a model to predict this.
 
 Here are what the columns represent:
 
