@@ -4,7 +4,7 @@
   permalink: /project/
   author_profile: True
   header:
-    image: "/images/sky.jpg"
+    image: "/images/Backgrounds.png"
 ---
 
 {% include group-by-array collection=site.posts field="tags" %}
