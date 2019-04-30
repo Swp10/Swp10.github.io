@@ -71,7 +71,7 @@ loan.describe()
 loan.head()
 ```
 
-Check if there is any missing data
+Check the missing data
 ```python
 loan.isnull().sum()
 ```
@@ -106,12 +106,13 @@ Group the not.fully.paid feature
 ```python
 loan.groupby('not.fully.paid').size()
 ```
-not.fully.paid
-0    8045
-1    1533
-dtype: int64
+```python
+#Positive examples (1) = 1533
+#Negative examples (0) = 8045
+# Apparently, the data set is imbalanced the examples of not.fully.paid is only 16%
+```
 
-Data correlation matrix The correlation matrix is an important tool to understand the correlation between the different characteristics. The values range from -1 to 1 and the closer a value is to 1 the bettere correlation there is between two characteristics. Let's calculate the correlation matrix for our dataset.
+Data correlation matrix - The correlation matrix is an important tool to understand the correlation between the different characteristics. The values range from -1 to 1 and the closer a value is to 1 the bettere correlation there is between two characteristics. Let's calculate the correlation matrix for our dataset.
 ```python
 corr = loan.corr()
 corr  
@@ -147,11 +148,12 @@ loan.median()
 ```python
 sns.boxplot(x=loan["not.fully.paid"], y=loan["int.rate"])
 ```
+not.fully.paid loaner has a higher interest rate
 
 ```python
 sns.boxplot(x=loan["not.fully.paid"], y=loan["fico"])
 ```
-** Create a countplot using seaborn showing the counts of loans by purpose, with the color hue defined by not.fully.paid. **
+not.fully.paid loaner has a lower Fico score
 
 ```python
 sns.jointplot(x='fico',y='int.rate',data=loan, color='green')
